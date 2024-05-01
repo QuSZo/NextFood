@@ -1,0 +1,27 @@
+.main {
+  display: flex;
+  padding: var(--application-padding);
+  padding-top: calc(var(--navbar-height) + 50px);
+  min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    width: 100%;
+    gap: 2rem;
+}
+
+.mealBoxes {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+@media screen and (width < 1000px) {
+    .mealBoxes {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

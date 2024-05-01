@@ -1,0 +1,11 @@
+.main {
+    display: flex;
+    padding: var(--application-padding);
+    padding-top: calc(var(--navbar-height) + 50px);
+    min-height: 100vh;
+}
+
+.container {
+    min-height: 100%;
+    width: 100%;
+}
